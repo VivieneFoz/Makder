@@ -1,0 +1,22 @@
+body {
+	font-family: "Raleway"
+}
+
+body, html {
+	height: 100%;
+	line-height: 1.8;
+}
+
+.LIST {
+	text-align: center;
+}
+
+.list-color {
+	background-image: linear-gradient(to right, red, white, black);
+}
+
+.footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+}

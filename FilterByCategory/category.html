@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    
-    </heaad>
-    
-    <body>
-        <section class="choices">
-              <div class="categories">
-               <ul>
-                <li ng-repeat="menu in fullMenu">
-                  <a ng-repeat="(key,val) in menu" href="" ng-click="categoryFilters.category = {{key}}">{{key}}
-                  </a>
-                </li>
-               </ul>
-              </div>
-        </section>
-            <section class="category" ng-repeat="menu in fullMenu | filter: categoryFilters">
-              <div ng-repeat="items in menu">
-               <ul>
-                <li ng-repeat="item in items">
-                  <img src="{{item.image_url}}">
-                  <h3>{{item.name}}</h3>
-                  <p>{{item.description}}</p>
-                  <p><span>$</span>{{item.price}}</p>
-                </li>
-               </ul>
-              </div>
-        </section>
-    </body>
-</html>
+<script src="https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"></script>
+<body ng-app="app" ng-controller="ctrl">
+  <section class="choices">
+    <div class="categories">
+      <ul>
+        <li ng-repeat="menu in menus">
+          <a ng-repeat="(key,val) in menu" href="" ng-click="categoryList(key)">{{key}}
+      </a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="category" ng-repeat="menu in menus">
+    <div ng-repeat="(key, items) in menu">
+      <ul>
+        <li ng-repeat="item in items" ng-show="category == key">
+          <div>
+            <img src="{{item.strMealThumb}}">
+            <h3>{{item.strMeal}}</h3>
+ 
+          </div>
+        </li>
+      </ul>
+    </div>

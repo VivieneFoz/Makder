@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    </heaad>
+    
+    <body>
+        <section class="choices">
+              <div class="categories">
+               <ul>
+                <li ng-repeat="menu in fullMenu">
+                  <a ng-repeat="(key,val) in menu" href="" ng-click="categoryFilters.category = {{key}}">{{key}}
+                  </a>
+                </li>
+               </ul>
+              </div>
+        </section>
+            <section class="category" ng-repeat="menu in fullMenu | filter: categoryFilters">
+              <div ng-repeat="items in menu">
+               <ul>
+                <li ng-repeat="item in items">
+                  <img src="{{item.image_url}}">
+                  <h3>{{item.name}}</h3>
+                  <p>{{item.description}}</p>
+                  <p><span>$</span>{{item.price}}</p>
+                </li>
+               </ul>
+              </div>
+        </section>
+    </body>
+</html>

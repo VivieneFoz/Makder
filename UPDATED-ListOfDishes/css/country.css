@@ -1,0 +1,89 @@
+body {
+	font-family: "Raleway"
+}
+
+body, html {
+	height: 100%;
+	line-height: 1.8;
+}
+
+h3 {
+	text-align: center;
+	font-size: 30px;
+     background: -webkit-linear-gradient(grey, black);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.utensils{
+    position: relative;
+    right:200px;
+    width:60px;
+    height:60px;
+    top:75px;
+}
+.pot{
+    position: relative;
+    left:200px;
+    width:60px;
+    height:60px;
+    bottom:75px;
+}
+.country{
+	height: 84px;
+}
+.flag{
+	height:50px;
+	width:100px;
+}
+.table{
+	display: table;
+}
+.area{
+	min-width: 696px;
+	list-style: none;
+	min-width: 696px;
+	padding: 20px;
+}
+.TOP {
+	text-align: center;
+}
+
+.COUNTRIES {
+	align-content: center;
+}
+
+.CONTAINER {
+	background-color: lightgrey;
+}
+
+.CARD {
+	background-color: orange;
+}
+
+.CARD-CONTAINER {
+	text-align: center;
+}
+
+.FOOTER {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+img{
+   height:150px;
+   width:200px;
+   display: block;
+    margin: 0 auto;
+}
+li{
+  list-style: none;
+  list-style-type: none;
+}
+.Button{
+    position: absolute;
+    left: 0;
+    top:210%;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+}

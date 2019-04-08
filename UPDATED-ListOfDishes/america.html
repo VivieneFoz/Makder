@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<link rel = "icon" href = "../UPDATED-ListOfDishes/images/icons/meat.ico">
+
+	<meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
+	<title> List Of Dishes </title>
+
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	<link rel = "stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
+	<link href = "https://fonts.googleapis.com/css?family=Raleway" rel = "stylesheet" type = "text/css">
+	<link href = "https://www.1001freefonts.com/calligraphy-fonts.php">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel = "stylesheet" type = "text/css" href = "../UPDATED-ListOfDishes/css/lod.css">
+  <link rel = "stylesheet" type = "text/css" href = "../UPDATED-ListOfDishes/css/country.css">
+</head>
+
+<body>
+	<br>
+	<div class = "TOP w3-large" id = "top"> Welcome to </div>
+		<div class = "w3-center w3-bar-item w3-wide w3-xxlarge w3-animate-opacity">
+			<img src = "../UPDATED-ListOfDishes/images/icons/utensils.ico" width = "60" height = "60" alt = "utensils" class="utensils">
+			<b class = "w3-xxxlarge"> CUISINA </b>
+			<img src = "../UPDATED-ListOfDishes/images/icons/pot.ico" width = "73" height = "73" alt = "utensils" class="pot">
+		</div>
+
+	<br>
+	<div class = "CONTAINER w3-container" style = "padding: 128px 16px" id = "dishes">
+		<h3><b> LIST OF DISHES </b></h3>
+		<div id="country">
+					<table class="table">
+            <tr class="area">
+								<th><a href="japan.html"><img class="flag" src="flag/japan.png" alt="japan"></a></th>
+								<th><a href="america.html"><img class="flag" src="flag/America.png" alt="america"></a></th>
+								<th><a href="france.html"><img class="flag" src="flag/France.png" alt="france"></a></th>
+								<th><a href="canada.html"><img class="flag" src="flag/Canada.png" alt="canada"></a></th>
+								<th><a href="uk.html"><img class="flag" src="flag/United%20Kingdom.png" alt="uk"></a></th>
+						</tr>
+							</table><script src="https://www.themealdb.com/api/json/v1/1/filter.php?a=American"></script>
+<body ng-app="app" ng-controller="ctrl">
+  <section class="choices">
+    <div class="americanCategory">
+      <ul>
+        <bt>
+        <li ng-repeat="menu in menus">
+          <a ng-repeat="(key,val) in menu" href="" ng-click="americaList(key)" class="Button"> Show list
+      </a>
+          <br>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="acategory" ng-repeat="menu in menus">
+    <div ng-repeat="(key, items) in menu">
+      <ul>
+        <li ng-repeat="item in items" ng-show="acategory == key">
+          <div>
+            <img src="{{item.strMealThumb}}">
+            <h3>{{item.strMeal}}</h3>
+ 
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+</body>
+</div>
+</div>
+</body>

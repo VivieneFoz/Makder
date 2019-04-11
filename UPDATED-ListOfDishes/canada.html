@@ -56,16 +56,6 @@
       </ul>
     </div>
 
-<body ng-app="app" ng-controller="ctrl">
-  <section class="canadadish">
-    <div class="canadaCategory">
-      <ul>
-          <a ng-repeat="(key,val) in menu" href="" ng-click="canadaList(key)">
-      </a>
-      </ul>
-    </div>
-
-  </section>
   <section class="canadaCategory" ng-repeat="menu in menus">
     <div ng-repeat="(key, items) in menu">
       <ul>

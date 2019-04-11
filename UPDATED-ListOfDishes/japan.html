@@ -19,8 +19,10 @@
   <link rel = "stylesheet" type = "text/css" href = "../UPDATED-ListOfDishes/css/country.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-	<script src="japan.js"></script>
+
 </head>
+
+<script src="japan.js"></script>
 
 <body>
 	<br>
@@ -43,23 +45,23 @@
 								<th><a href="canada.html"><img class="flag" src="flag/Canada.png" alt="canada"></a></th>
 								<th><a href="uk.html"><img class="flag" src="flag/United%20Kingdom.png" alt="uk"></a></th>
 						</tr>
-							</table><script src="https://www.themealdb.com/api/json/v1/1/filter.php?a=American"></script>
+              </table>
+              <script src="https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese"></script>
 <body ng-app="app" ng-controller="ctrl">
-  <section class="choices">
-    <div class="americanCategory">
+  <section class="japandish">
+    <div class="japanCategory">
       <ul>
         <bt>
         <li ng-repeat="menu in menus">
-          <a ng-repeat="(key,val) in menu" href="" ng-click="americaList(key)"class="Button"> 
+          <a ng-repeat="(key,val) in menu" href="" ng-click="japanList(key)"class="Button"> 
       </a>
           <br>
         </li>
       </ul>
     </div>
 
-<script src="https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese"></script>
 <body ng-app="app" ng-controller="ctrl">
-  <section class="choices">
+  <section class="japandish">
     <div class="japanCategory">
       <ul>
           <a ng-repeat="(key,val) in menu" href="" ng-click="japanList(key)">
@@ -73,8 +75,10 @@
       <ul>
         <li ng-repeat="item in items" ng-show="jcategory == key">
           <div>
-            <img src="{{item.strMealThumb}}">
-            <h3>{{item.strMeal}}</h3>
+             
+            <img src="{{item.strMealThumb}}" class="dish">
+            <h3>{{item.strMeal}}"</h3>
+           
  
           </div>
         </li>

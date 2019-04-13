@@ -1,0 +1,109 @@
+body {
+  font-family: "Raleway"
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    overflow: visible;
+    display: block;
+}
+
+img {
+  float: center;
+  display: inline-block;
+  padding: 40px;
+  height: 50%;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  color: #bd5734;
+}
+
+
+.w3-button {
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.DISH {
+  color: floralwhite;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pagecontainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 2.5rem;
+}
+
+.FOOTER {
+  position: relative;
+  bottom: 0;
+  height: 3rem;
+  top: 100px;
+  width: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+.TEAM {
+  color: #feb236;
+  font-size: 15px;
+}
+
+.categories {
+  overflow: visible;
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+}
+
+.categories ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.categories ul li a {
+  color: white;
+  padding: 20px;
+  display:inline;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+}
+
+.categories ul li a:hover {
+  background: #ffcc5c;
+}
+
+.categories ul li a:before {
+    content: "//";
+    color: rgba(1,2,0,.6);
+}
+
+.KEY {
+  text-align: center;
+}

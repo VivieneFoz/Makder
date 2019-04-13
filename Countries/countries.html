@@ -2,27 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Cuisna</title>
-		<title>Cuisina</title>
-		<link rel="icon" href="images/utensils.ico">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="../FilterByCategory/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700i,800" rel="stylesheet">
+        <title>Cuisina</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-
+        <link rel="stylesheet" href="../bootstrap.min.css">
+       <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style1.css">
     </head>
-	   <script src="category.js"></script>
+    <script src="countries.js"></script>
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="../index.html">Cuisina</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-           <div class="collapse navbar-collapse" id="navbarColor01">
+              <a class="navbar-brand" href="../index.html">Cuisina</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+          <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="../FilterByCategory/filtercategory.html">Categories<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../FilterByCategory/filtercategory.html">Categories</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../dishes/ListOfDishes.html">Dishes</a>
@@ -37,43 +36,35 @@
           </div>
         </nav>
         
-            
+        <div class="countrycontent">
           <body ng-app="app" ng-controller="ctrl">
-            <div class= "Caption">
-              <h1>Category</h1>
-            </div>
+            <br>
               <section class="choices">
-                <div class="categories">
+                <div class="countries">
                   <button ng-repeat="menu in menus">
-                      <a ng-repeat="(key,val) in menu" href="" ng-click="categoryList(key)">{{key}}</a> 
+                      <a ng-repeat="(key,val) in menu" href="" ng-click="countryList(key)">{{key}}</a> 
                     </button>
                 </div>
               </section>
-              <section class="category" ng-repeat="menu in menus">
+              <section class="country" ng-repeat="menu in menus">
                 <div ng-repeat="(key, items) in menu">
                   <ul>
-                    
-                    <li ng-repeat="item in items" ng-show="category == key">
+                   
+                    <li ng-repeat="item in items" ng-show="country == key">
                       <div id="whole">
-                          <br>
                       <div id="Image">
                         <img src="{{item.strMealThumb}}">
                        </div>
                       <div id="MealName">
                         <h3>{{item.strMeal}}</h3>
-                          
                       </div>
                         </div>
                     </li>
                   </ul>
                 </div>
               </section>
+              
             </body>
-    
-
-        <footer>
-            <p id="ftr">Team Makder | All Rights Reserved ©️ 2019 </p>
-        </footer>
+        </div>
     </body>
-
 </html>

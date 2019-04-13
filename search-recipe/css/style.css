@@ -10,3 +10,8 @@
 #recipes .col-md-3 img{
     height: 240px;
 }
+
+td {
+  padding-right: 10px;
+  text-align: left;
+} 

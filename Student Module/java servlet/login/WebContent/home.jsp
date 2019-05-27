@@ -17,9 +17,10 @@
 			
 		</nav><br>
 		
-		<center><a href="http://localhost:8080/login/home.jsp"> Home</a></center>
-		<center><a href="http://localhost:8080/login/login.jsp"> Login</a></center>
-		<center><a href="http://localhost:8080/login/logout.jsp"> Logout</a></center>
-	
+		<center><a href="">Admin</a></center>
+		<center><a href="http://localhost:8080/login/studlogin.jsp">Student</a></center>
+		
+		<center><a href="">Class Staff</a></center>
+		
 </body>
 </html>

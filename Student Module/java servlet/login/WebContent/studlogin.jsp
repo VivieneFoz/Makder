@@ -26,7 +26,7 @@
 		
 	<center><form action="StudentLogin" method="post">
 	<b>ID Number</b> <br> <input type="text" name="uname" ></center><br>
-    <center><a href="http://localhost:8080/login/welcome.jsp"> Login</a></center>
+    <center><a href="http://localhost:8080/login/reservation.jsp"> Login</a></center>
 	</form>
 </body>
 </html>

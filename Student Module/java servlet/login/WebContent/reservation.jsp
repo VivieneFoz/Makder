@@ -35,7 +35,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown user user-menu">
                       
-                            <a href="http://localhost:8080/login/logout.jsp" style="color: white">Logout</a>
+                            <a href="http://localhost:8080/login/studlogout.jsp" style="color: white">Logout</a>
 		
                         </ul>
                     </li>
@@ -294,7 +294,7 @@
     </div>
 </div>
 
-<form method="POST" action="http://localhost/Makder/LoginPage/Submit.php" id="FormSubmit">
+<form method="POST" action="http://localhost/Makder/LoginPage/Submit.jsp" id="FormSubmit">
     <!-- Pag send ng mga reserved items sa class staff-->
     <!-- Parag viewing ng Class Staff -->
 </form>

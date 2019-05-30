@@ -1,0 +1,54 @@
+body, html {
+	height: 100%;
+	line-height: 1.8;
+}
+
+body {
+  	font-family: "Raleway"
+}
+
+.SPAN {
+	font-size: 65px;
+	text-shadow: 2px 6px 6px #000000;
+}
+
+.P-INDEX {
+	color: black;
+}
+
+.H {
+	background-color: #82b74b;
+	padding: 50px;
+}
+
+.WELCOME {
+	text-align: center;
+}
+
+.ERR {
+	color: #FF0000;
+	font-family: sans-serif;
+}
+
+.BUTTON {
+	border-radius: 80px;
+}
+
+.FOOTER {
+	bottom: 0;
+	width: 100%;
+	color: white;
+	height: 3rem;
+	font-size: 13px;
+	padding-top: 30px;
+	position: relative;
+	text-align: center;
+	padding-bottom: 100px;
+	background-color: black;
+}
+
+.TEAM {
+	color: #ffffff;
+	font-size: 15px;
+	font-family: sans-serif;
+}

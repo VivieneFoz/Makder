@@ -1,0 +1,57 @@
+body, h1, p {
+  font-family: "Raleway", sans-serif
+}
+
+body, html {
+  height: 100%
+}
+
+.SPAN {
+  
+  text-shadow: 2px 7px 5px darkgrey;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../itproj/images/BURGER.jpg");
+  min-height: 100%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button1 {
+  border-radius: 50%;
+}
+
+.WORD {
+  text-align: center;
+  padding-top: 290px;
+  color: orange;
+}
+
+.art-world {
+  color: white;
+}
+
+.COFFEE {
+  color: green;
+}
+
+.MEDICAL {
+  color: red;
+}
+
+.WELCOME, .F {
+  text-align: center;
+}

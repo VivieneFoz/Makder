@@ -1,0 +1,77 @@
+body, html {
+	height: 100%;
+	line-height: 1.8;
+}
+
+body {
+  	font-family: "Raleway"
+}
+
+.SPAN {
+	font-size: 75px;
+	text-shadow: 2px 7px 5px darkgrey;
+}
+
+.REGISTER {
+	font-size: 65px;
+	text-shadow: 2px 7px 5px darkgrey;
+}
+
+.avatar {
+	width: 75px;
+	text-align: center;
+	border-radius: 70%;
+}
+
+.iBorrow {
+	width: 450px;
+	margin: 0 auto;
+}
+
+.inputvalues {
+	width: 430px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+#login-btn {
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 80px;
+
+}
+
+#register-btn {
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 80px;
+}
+
+#signup-btn {
+	width: 100%;
+	padding: 5px;
+	color: white; 
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 80px;
+	background-color: #0f7fb1;
+}
+
+#back-btn {
+	width: 45%;
+	padding: 5px;
+	color: white; 
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 80px;
+	background-color: #f47722;
+}

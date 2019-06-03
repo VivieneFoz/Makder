@@ -1,20 +1,26 @@
 <?php
-	include 'dbconfig/config.php';
     session_start();
-if (isset($_POST['login'])) {
+	include_once 'dbconfig/config.php';
+if (isset($_POST['submit'])) {
 	$idnum = mysqli_real_escape_string($conn, $_POST['idnum']);
 	$result = mysqli_query($conn, "SELECT * FROM login WHERE idnum = '" . $idnum. "'");
+    if (!preg_match("/^[0-9 ]+$/",$idnum)) {
+		$error = true;
+		$idnum_error = "ID Number must contain Numbers only!!!!";
+	}
+	if(strlen($idnum) > 7) {
+		$error = true;
+		$idnum_error = "ID Number must contain 7 numbers ONLY!!!";
+	}
 	if ($row = mysqli_fetch_array($result)) {
 		$_SESSION['idnum'] = $row['idnum'];	
-		header("Location: reserve.php");
+		header("Location: reserve.php");/*Redirect Browser*/
 	} else {
 		$error_message = "Incorrect ID Number!!!";
 	}
 }
 ?>
 
-<!DOCTYPE html>
-<html>
 <head>
 <title>iBorrow</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -35,7 +41,7 @@ if (isset($_POST['login'])) {
 			<div class="imgcontainer">
 				<img src="imgs/avatar.png" alt="Avatar" class="avatar">
 			</div>
-		<form action="reserve.php" method="post">
+		<form action="" method="post">
 		
 			<div class="inner_container">
 				<label><b>ID Number</b></label>
@@ -47,4 +53,3 @@ if (isset($_POST['login'])) {
 		
 	</div>
 </body>
-</html>

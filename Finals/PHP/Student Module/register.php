@@ -67,19 +67,10 @@ if (isset($_POST['signup'])) {
 						<input type="password" name="rpassword" placeholder="Confirm Password" required class="form-control" />
 						<span class="text-danger"><?php if (isset($rpassword_error)) echo $rpassword_error; ?></span>
 					</div>
-
-					<div class="form-group">
-						<input type="submit" name="signup" value="Sign Up" class="btn btn-primary" />
-					</div>
 				</fieldset>
 			</form>
 			<span class="text-success"><?php if (isset($success_message)) { echo $success_message; } ?></span>
 			<span class="text-danger"><?php if (isset($error_message)) { echo $error_message; } ?></span>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-4 text-center">	
-		Already Registered? <a href="login.php">Login Here</a>
-		</div>
-	</div>	
 </div>

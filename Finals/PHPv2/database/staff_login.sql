@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 25, 2019 at 06:41 PM
+-- Generation Time: Jun 25, 2019 at 08:23 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.1.26
 
@@ -43,9 +43,7 @@ CREATE TABLE `staff_login` (
 --
 
 INSERT INTO `staff_login` (`id_number`, `first_name`, `last_name`, `class_code`, `contact`, `email`, `password`) VALUES
-(2143221, 'Cyrell', 'Madayag', '9322', '09395045607', 'cyrellmadayag@gmail.com', '12345678'),
-(2153221, 'Audry', 'Almayda', '9320', '09395045600', 'audryalmayda@gmail.com', '12345678'),
-(2163221, 'Seth', 'Albano', '9321', '09395045601', 'sethalbano@gmail.com', '12345678');
+(2153221, 'Audry', 'Almayda', '9320', '09395045600', 'audryalmayda@gmail.com', '12345678');
 
 --
 -- Indexes for dumped tables

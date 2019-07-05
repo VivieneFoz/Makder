@@ -46,10 +46,28 @@
                     <div class="menu_section">
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-laptop"></i>
+                                    <span>9320</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="display_students.php"><i class="fa fa-circle-o"></i>Group Leaders</a></li>
+                                    <li><a href="add_students.php"><i class="fa fa-circle-o"></i> Add Students</a></li>
+                                    <li><a href="add_items.php"><i class="fa fa-circle-o"></i>Add Items</a></li>
+                                    <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i>Borrowers</a></li>
+                                </ul>
+                            </li>
+
+                            <!--
+                            <li><a href="display_students.php"><i class="fa fa-home"></i> 9320 <span class="fa fa-chevron-down"></span></a>
 
                             </li>
-                            <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-edit"></i> Add Student <span class="fa fa-chevron-down"></span></a>
 
                             </li>
                             <li><a><i class="fa fa-desktop"></i> UI Elements <span
@@ -63,6 +81,7 @@
                                     class="fa fa-chevron-down"></span></a>
 
                             </li>
+                            -->
 
                         </ul>
                     </div>

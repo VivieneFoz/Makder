@@ -33,10 +33,10 @@ include "connection.php";
             <h1>Instructor Login Form</h1>
 
             <div>
-                <input type="text" name="fac_number" class="form-control" placeholder="Faculty ID" required=""/>
+                <input type="text" name="facnumber" class="form-control" placeholder="Faculty ID" required="">
             </div>
             <div>
-                <input type="password" name="password" class="form-control" placeholder="Password" required=""/>
+                <input type="password" name="password" class="form-control" placeholder="Password" required="">
             </div>
             <div>
 

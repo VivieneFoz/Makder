@@ -27,33 +27,13 @@ include "connection.php";
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Students</h2>
+                                <h2>Add Students</h2>
 
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
                             <?php
-                                $res=mysqli_query($link, "select * from student_login");
-                                echo "<table>";
-                                echo "<tr>";
-                                echo "<th>"; echo "id_number"; echo "</th>";
-                                echo "<th>"; echo "first_name"; echo "</th>";
-                                echo "<th>"; echo "last_name"; echo "</th>";
-                                echo "<th>"; echo "group_number"; echo "</th>";
-                                echo "<th>"; echo "contact"; echo "</th>";
-                                echo "<th>"; echo "email"; echo "</th>";
-                                echo "</tr>";
-                                while($row=mysqli_fetch_array($res)){
-                                    echo "<tr>";
-                                    echo "<td>"; echo $row["id_number"]; echo "</td>";
-                                    echo "<td>"; echo $row["first_name"]; echo "</td>";
-                                    echo "<td>"; echo $row["last_name"]; echo "</td>";
-                                    echo "<td>"; echo $row["group_number"]; echo "</td>";
-                                    echo "<td>"; echo $row["contact"]; echo "</td>";
-                                    echo "<td>"; echo $row["email"]; echo "</td>";
-                                    echo "</tr>";
-                                }
-                                echo "</table>"
+                                
 
                                 ?>
                             </div>

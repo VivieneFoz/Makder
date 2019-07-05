@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2019 at 06:12 PM
+-- Generation Time: Jul 05, 2019 at 07:10 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.1.26
 
@@ -41,11 +41,11 @@ CREATE TABLE `add_items` (
 --
 
 INSERT INTO `add_items` (`id`, `item_name`, `item_image`, `item_qty`, `available_qty`) VALUES
-(1, 'shovel', 'items_image3140d771d1c098f587c65fb8530602d4gloves.jpg', '15', '15'),
-(2, 'gloves', 'items_imageac8ab83fbcd623170730c327dac22b0dgloves.jpg', '10', '10'),
-(3, 'rag', 'items_image187811e56aa3a85ac323a248a33bfcc7rag.jpg', '15', '15'),
-(4, 'broomstick', 'items_image7ac1be254b45cd012b3faf289ed4c508broomstick.jpg', '10', '10'),
-(5, 'dustpan', 'items_image202e3001a55ae51ee9c291755c635aa2dustpan.jpg', '10', '10');
+(1, 'shovel', 'items_image/9df56335cc681818b1aa294ee06fb8e3shovel.jpg', '10', '10'),
+(2, 'gloves', 'items_image/e4179471014c5b54f444b63ae2ca8d6dgloves.jpg', '15', '15'),
+(3, 'broomstick', 'items_image/7893e601c9a8d5a7fc4cdbedda1dc758broomstick.jpg', '15', '15'),
+(4, 'dustpan', 'items_image/4002a8a5cb55c78c6e8fdb0837c6d0d9dustpan.jpg', '15', '15'),
+(5, 'rag', 'items_image/81453528d2f2e06d127f0a3e04ba28abrag.jpg', '10', '10');
 
 --
 -- Indexes for dumped tables

@@ -75,7 +75,7 @@ include "connection.php";
                 $tm=md5(time());
                 $fnm=$_FILES["f1"]["name"];
                 $dst="./items_image/".$tm.$fnm;
-                $dst1="items_image".$tm.$fnm;
+                $dst1="items_image/".$tm.$fnm;
 
                 move_uploaded_file($_FILES["f1"]["tmp_name"], $dst);
 

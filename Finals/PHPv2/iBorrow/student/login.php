@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "connection.php";
 ?>
 <!DOCTYPE html>
@@ -69,9 +70,10 @@ if(isset($_POST["submit1"]))
     }
     else
     {
+    $_SESSION["idnum"]=$_POST["id_number"];
         ?>
 <script type="text/javascript">
-    window.location="aa.php";
+    window.location="my_borrowed_items.php";
 </script>
 <?php
     }

@@ -21,7 +21,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="#" class="site_title"><i class="fa fa-book"></i> <span>iB</span></a>
+                    <a href="#" class="site_title"><span>iBorrow</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -46,24 +46,17 @@
                     <div class="menu_section">
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
 
+                            <li class="treeview">
+                                <a href="#">
+                                    <span>9320</span>
+                                    <span class="pull-right-container">
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="my_borrowed_items.php">Borrowed Items</a></li>
+                                </ul>
                             </li>
-                            <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-desktop"></i> UI Elements <span
-                                    class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span
-                                    class="fa fa-chevron-down"></span></a>
-
-                            </li>
-
                         </ul>
                     </div>
 

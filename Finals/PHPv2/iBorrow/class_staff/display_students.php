@@ -7,7 +7,7 @@ include "connection.php";
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>iBorrow | Instructor</h3>
+                        <h3>iBorrow | Class Staff</h3>
                     </div>
 
                     <div class="title_right">
@@ -32,7 +32,7 @@ include "connection.php";
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                            <?php
+                                <?php
                                 $res=mysqli_query($link, "select * from student_login");
                                 echo "<table>";
                                 echo "<tr>";

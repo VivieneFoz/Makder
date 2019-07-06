@@ -21,7 +21,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="#" class="site_title"><i class="fa fa-book"></i> <span>iB</span></a>
+                    <a href="#" class="site_title"></i> <span>iBorrow</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -49,40 +49,17 @@
 
                             <li class="treeview">
                                 <a href="#">
-                                    <i class="fa fa-laptop"></i>
                                     <span>9320</span>
                                     <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
                                     </span>
                                 </a>
                                 <ul class="treeview-menu">
-                                    <li><a href="display_students.php"><i class="fa fa-circle-o"></i>Group Leaders</a></li>
-                                    <li><a href="add_students.php"><i class="fa fa-circle-o"></i> Add Students</a></li>
-                                    <li><a href="add_items.php"><i class="fa fa-circle-o"></i>Add Items</a></li>
-                                    <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i>Borrowers</a></li>
+                                    <li><a href="display_students.php">Group Leaders</a></li>
+                                    <li><a href="display_items.php">Items</a></li>
+                                    <li><a href="add_items.php">Add Items</a></li>
+                                    <li><a href="pages/UI/sliders.html">Borrowers</a></li>
                                 </ul>
                             </li>
-
-                            <!--
-                            <li><a href="display_students.php"><i class="fa fa-home"></i> 9320 <span class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-edit"></i> Add Student <span class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-desktop"></i> UI Elements <span
-                                    class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span
-                                    class="fa fa-chevron-down"></span></a>
-
-                            </li>
-                            -->
-
                         </ul>
                     </div>
 

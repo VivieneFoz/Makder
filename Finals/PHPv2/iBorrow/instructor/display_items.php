@@ -1,6 +1,6 @@
 <?php
-include "header.php";
 include "connection.php";
+include "header.php";
 ?>
 
         <div class="right_col" role="main">
@@ -27,34 +27,31 @@ include "connection.php";
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Group Leaders</h2>
+                                <h2>Items</h2>
 
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                            <?php
-                                $res=mysqli_query($link, "select * from student_login");
-                                echo "<table>";
-                                echo "<tr>";
-                                echo "<th>"; echo "id_number"; echo "</th>";
-                                echo "<th>"; echo "first_name"; echo "</th>";
-                                echo "<th>"; echo "last_name"; echo "</th>";
-                                echo "<th>"; echo "group_number"; echo "</th>";
-                                echo "<th>"; echo "contact"; echo "</th>";
-                                echo "<th>"; echo "email"; echo "</th>";
-                                echo "</tr>";
-                                while($row=mysqli_fetch_array($res)){
-                                    echo "<tr>";
-                                    echo "<td>"; echo $row["id_number"]; echo "</td>";
-                                    echo "<td>"; echo $row["first_name"]; echo "</td>";
-                                    echo "<td>"; echo $row["last_name"]; echo "</td>";
-                                    echo "<td>"; echo $row["group_number"]; echo "</td>";
-                                    echo "<td>"; echo $row["contact"]; echo "</td>";
-                                    echo "<td>"; echo $row["email"]; echo "</td>";
-                                    echo "</tr>";
-                                }
-                                echo "</table>"
 
+                                <?php
+                                    $res=mysqli_query($link, "select * from add_items");
+                                    echo "<table class='table table-bordered'>";
+                                    echo "<tr>";
+                                    echo "<th>"; echo "item_image"; echo "</th>";
+                                    echo "<th>"; echo "item_name"; echo "</th>";
+                                    echo "<th>"; echo "item_qty"; echo "</th>";
+                                    echo "<th>"; echo "available_qty"; echo "</th>";
+                                    echo "</tr>";
+
+                                    while ($row = mysqli_fetch_array($res)) {
+                                        echo "<tr>";
+                                        echo "<td>"; ?><img src="<?php echo $row["item_image"]; ?> " height="100" width="100"> <?php echo "</td>";
+                                        echo "<td>"; echo $row["item_name"]; echo "</td>";
+                                        echo "<td>"; echo $row["item_qty"]; echo "</td>";
+                                        echo "<td>"; echo $row["available_qty"]; echo "</td>";
+                                        echo "</tr>";
+                                    }
+                                    echo "</table>";
                                 ?>
                             </div>
                         </div>
